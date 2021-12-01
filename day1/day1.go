@@ -85,7 +85,6 @@ func step2(data []int) {
 		if !ok {
 			continue
 		}
-		println(newSum)
 
 		if newSum > previousSum {
 			increases += 1
