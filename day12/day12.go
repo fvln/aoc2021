@@ -32,9 +32,9 @@ func step1(start *Node, end *Node) {
 	rootPath[0] = start.name
 
 	allPaths := iterateOnPaths(start, rootPath, end)
-	for _, path := range allPaths {
-		fmt.Printf("%v\n", path)
-	}
+	//for _, path := range allPaths {
+	//	fmt.Printf("%v\n", path)
+	//}
 	fmt.Println(len(allPaths))
 }
 
@@ -138,6 +138,7 @@ func Solve() {
 		ep1.neighbors = append(ep1.neighbors, ep0)
 	}
 
-	// step1(allNodes["start"], allNodes["end"])
+
+	step1(allNodes["start"], allNodes["end"])
 	step2(allNodes["start"], allNodes["end"])
 }
